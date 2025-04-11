@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface-50 text-surface-800 dark:bg-surface-900 dark:text-surface-100 transition-colors duration-200;
+  }
+}
+
+@layer components {
+  .calculator-key {
+    @apply flex items-center justify-center text-xl font-medium rounded-xl transition-all duration-200 select-none;
+  }
+  
+  .calculator-key-number {
+    @apply calculator-key bg-surface-100 text-surface-800 hover:bg-surface-200 active:scale-95 dark:bg-surface-800 dark:text-surface-100 dark:hover:bg-surface-700;
+  }
+  
+  .calculator-key-operation {
+    @apply calculator-key bg-primary-light text-white hover:bg-primary active:scale-95 dark:bg-primary-dark dark:hover:bg-primary;
+  }
+  
+  .calculator-key-function {
+    @apply calculator-key bg-secondary-light text-white hover:bg-secondary active:scale-95 dark:bg-secondary-dark dark:hover:bg-secondary;
+  }
+  
+  .calculator-key-equals {
+    @apply calculator-key bg-accent text-white hover:opacity-90 active:scale-95;
+  }
+  
+  .calculator-display {
+    @apply w-full p-4 text-right rounded-xl bg-surface-200 dark:bg-surface-700 font-mono transition-all duration-200;
+  }
+}
+
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;    
+  }
+}
