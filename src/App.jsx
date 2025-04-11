@@ -27,7 +27,7 @@ function App() {
       <header className="py-4 px-6 flex justify-between items-center">
         <div className="flex items-center gap-2">
           <span className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            CalcuSmart
+            Ical
           </span>
         </div>
         
@@ -49,7 +49,7 @@ function App() {
       </main>
       
       <footer className="py-4 px-6 text-center text-sm text-surface-500">
-        <p>© {new Date().getFullYear()} CalcuSmart. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} Ical. All rights reserved.</p>
       </footer>
     </div>
   )
